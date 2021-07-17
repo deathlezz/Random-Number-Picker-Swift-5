@@ -1,5 +1,5 @@
 //
-//  Random Number Generator
+//  Random Number Picker
 //
 //  Created by deathlezz on 21/05/2021.
 //
@@ -7,7 +7,7 @@
 
 var numbersArray: [Int] = []     // set of numbers
 
-print("* Welcome to Random Number Generator *")
+print("* Welcome to Random Number Picker *")
 print()
 print("Enter the minimum value of the range:")
 
@@ -23,11 +23,11 @@ if let fromNumber = Int(readLine()!) {     // starting number
             
                 let range = fromNumber ... toNumber     // numbers range (from...to)
 
-                print("Enter amount of numbers to generate:")
+                print("Enter amount of numbers to pick:")
                 
-                if let numbersAmount = Int(readLine()!) {     // amount of numbers to generate
+                if let numbersAmount = Int(readLine()!) {     // amount of numbers to pick
 
-                    if numbersAmount > 0 && numbersAmount <= range.count {     // numbers to generate must be > 0 and <= amount numbers in the set
+                    if numbersAmount > 0 && numbersAmount <= range.count {     // numbers to pick must be > 0 and <= amount numbers in the set
                     
                         while numbersAmount != numbersArray.count {
                             
