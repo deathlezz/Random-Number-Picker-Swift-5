@@ -4,7 +4,6 @@
 //  Created by deathlezz on 21/05/2021.
 //
 
-
 var numbersArray: [Int] = []     // set of numbers
 
 print("* Welcome to Random Number Picker *")
