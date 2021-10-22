@@ -33,15 +33,15 @@ func minValue() {
                             
                             if let numbersAmount = Int(readLine()!) {     // amount of numbers to pick
 
-                                if numbersAmount > 0 && numbersAmount <= range.count {     // numbers to pick must be > 0 and <= amount numbers in the set
+                                if numbersAmount > 0 && numbersAmount <= range.count {     // numbers to pick must be > 0 and <= amount numbers in the array
                                 
                                     while numbersAmount != numbersArray.count {
                                         
                                         let randomNumbers = range.randomElement()     // find random number
                                         
-                                        if (randomNumbers != nil) != numbersArray.contains(randomNumbers!) {     // check if the found number is in the set
+                                        if !numbersArray.contains(randomNumbers!) {     // check if the found number is in the array
                                             
-                                            numbersArray.append(randomNumbers!)     // add unique number to set
+                                            numbersArray.append(randomNumbers!)     // add unique number to array
                                         }
                                     }
                                     
