@@ -19,7 +19,7 @@ while numbersArray.count != amount {
     // pick random number from array
     let random = range.randomElement()
     
-    // add unique number to array
+    // add only unique number to array
     if !numbersArray.contains(random!) {
         numbersArray.append(random!)
     }
